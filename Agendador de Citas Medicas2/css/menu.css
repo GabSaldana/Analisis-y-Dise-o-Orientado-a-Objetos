@@ -1,0 +1,107 @@
+/*Este programa genera la vista del menu del administrador*/
+
+body{
+    
+    margin :0;
+
+}
+
+#leftMenu{
+    
+    width: 20%;//ancho dinamico 
+    height: 250px;
+    margin-left: 400px;
+    margin-top: 30px;
+
+}
+
+#leftMenu > details > summary{
+    
+    cursor: pointer;
+    width: 170%;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    background: #1545DD;
+    color: aliceblue;
+    -webkit-transform:scale(0.8);
+}
+
+#leftMenu > details > summary:hover {
+    
+    /*background:Turquoise;*/
+    -webkit-transform:scale(1.0);
+    -webkit-transition:-webkit-transform 0.3s ease-in-out 0.1s;
+    
+}
+
+
+#leftMenu > details > summary::-webkit-details-marker{
+    
+    display: none;
+    
+}
+
+#leftMenu > details > a{
+    
+    font-family: 'Asap', sans-serif;
+    display: block;
+    text-decoration: none;
+    color:#000;
+    font-size: 13px;
+    margin: 3px 6px 3px 18px;
+    padding: 4px;
+    background: Violet; 
+    font-size: 120%;
+    border-radius: 30px;
+    color: white;
+    text-shadow: gray 3px 3px 5px;
+    
+}
+
+#leftMenu > details > a:hover {
+    
+    -webkit-transform:scale(1.2);
+    -webkit-transition:-webkit-transform 0.3s ease-in-out 0.1s;
+    
+}
+
+#icono{
+    
+    width: 20%;
+    height: 180px;
+    margin-left: 510px;
+    margin-top: 30px;
+    
+}
+
+#icono > span:before{//icono
+    
+    text-align: center;
+    padding: 10px;
+    font-size:190px;  
+    color: ivory;
+    text-shadow: gray 3px 3px 5px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

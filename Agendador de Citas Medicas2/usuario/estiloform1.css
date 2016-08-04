@@ -1,0 +1,89 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+
+}
+
+table{ border-collapse: collapse; border-spacing: 0;}
+td,th,caption{font-weight: normal; text-align: left;}
+img, fieldset{ border: 0;}
+ol{padding-left: 1.4em; list-style: decimal;}
+ul{padding-left: 1.4em;list-style: square;}
+q:before, q:after{content: ' ';}
+
+/*Este programa genera la vista de los formularios*/
+
+h1{
+    width: 30%;
+    border-radius: 20px;
+    margin-left: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: 'Asap', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: gray 3px 3px 5px;
+    background: #0099FF;
+    color:white;
+
+}
+
+h2{
+    
+    width: 30%;
+    border-radius: 20px;
+    margin-left: 800px;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: 'Asap', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: gray 3px 3px 5px;
+    background: -webkit-linear-gradient(left top,#87CEFA,#0099FF);
+    /*background: #0099FF;*/
+    color:white;
+
+}
+
+table{
+
+     float: left;
+     width:40%;
+     margin-left: 100px;
+     margin-top: 10px;
+     box-shadow:gray 3px 8px 40px;
+     border-radius: 20px;
+     
+}
+
+td{
+    
+    text-align: center;
+    padding: 30px;
+    font-family: 'Asap', sans-serif;
+
+}
+
+table td:hover{
+
+  -webkit-transform:scale(1.1);
+  -webkit-transition:-webkit-transform 0.3s ease-in-out 0.1s;
+
+}
+
+#mapa{
+    
+ behavior: url(css/PIE.htc); 
+ position: absolute;
+ box-shadow:gray 3px 8px 40px;
+ overflow: hidden;
+ right: 40px;
+ -webkit-transform:scale(0.85);
+ -webkit-border-radius: 30px;
+ overflow: hidden;  
+  border-radius: 30px;
+    
+}
+

@@ -1,0 +1,64 @@
+
+<!Doctype html>
+
+<!-- Este programa genera el formulario necesario para insertar un nuevo medico -->
+
+<html>
+    <head>
+        <title>FormularioMedico</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+        <link href="css/estiloform.css" rel="stylesheet"/> 
+        <link href='https://www.google.com/fonts#UsePlace:use/Collection:Roboto+Condensed' rel='stylesheet' type='text/css'>
+      
+        <style>
+        
+            h1{
+                margin-left: 450px;
+            }
+            table{
+                 margin-left: 400px;
+                 background-color: ivory;
+            }
+            
+        </style>
+    </head>
+    
+    <body background="fondos/medicalicons.jpg">
+        <header>
+            <hgroup>
+                <h1 class="h1">CAPTURA DE DATOS!!!!</h1>
+            </hgroup>
+        
+        </header>
+        <div>
+            
+        <section id="tabla">
+            <form name="formulario" method="post" action="insertandomedico.php" >
+                <table>
+                    <tr><td>
+                        Nombre:&nbsp;<input type="text" name="nombre" id="nombre" placeholder="Coloca tu nombre completo" required ></td></tr>
+                        <tr><td>
+                    Apellidos:&nbsp;<input type="text" name="apellido" id="apellido" placeholder="eje: Ap1_AP2" required></td></tr>
+                        <tr><td>
+                    Telèfono Celular:&nbsp;<input pattern="[0-9]{10}" name="telefono" id="telefono" placeholder="10 dìgitos" required></td></tr>
+                        <tr><td>
+                        Direcciòn:&nbsp;<input type="text" name="direccion" id="direccion" required></td></tr>
+                        <tr><td>
+                        E-mail:&nbsp;<input type="text" name="desc" id="desc" placeholder="ejemplo@ejemplo.com" required ></td></tr>
+                        <tr><td>
+                        <input type="submit" id="OK" value="Guardar"></td></tr>
+                </table>         
+            </form> 
+            
+        </section>
+        
+        <section id="zonadatos">
+        
+       <!--futuros datos-->
+        </section>
+    
+        </div>
+    </body>
+
+</html>
+

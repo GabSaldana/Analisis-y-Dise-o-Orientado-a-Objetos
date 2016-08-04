@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+
+<!-- Este programa genera la interfaz del menu del administrador-->
+
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+        <link href="flaticon/flaticon.css" rel="stylesheet"/>
+        <link rel='stylesheet' href="css/extra2.css">
+        <script src="jquery-2.1.4"></script>
+        <link rel="stylesheet" href="css/menu.css"/>
+        <link href='https://www.google.com/fonts#UsePlace:use/Collection:Roboto+Condensed' rel='stylesheet' type='text/css'>        
+  </head>
+<body  >
+    <script>
+            var bgcolorlist=new Array("#F596BE","#C595F2", "#659CE5","#58A9AD")
+            document.body.style.background=bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]
+    </script>
+    <ul class='bg-bubbles'>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    
+    <div id="icono">
+        <span class="flaticon-stethoscope"></span>
+    </div>
+    <div id="leftMenu">
+        <details>
+          <summary>Opciones de Insertado</summary>
+          <a href="formedico.html">Insertar Medico</a>
+          <a href="formhorario.html">Insertar Horario</a>
+        </details>
+        <details>
+          <summary>Ver </summary>
+          <a href="displayingmedico3.php">Ver Medicos Disponibles</a>
+          <a href="displayinghorario3.php">Ver Horarios Disponibles</a>
+        </details>
+        <details>
+          <summary>Otras Opciones</summary>
+          <a href="Login.html">Regresar al login</a>
+        </details>
+    
+    </div>
+</body>
+</html>
+    

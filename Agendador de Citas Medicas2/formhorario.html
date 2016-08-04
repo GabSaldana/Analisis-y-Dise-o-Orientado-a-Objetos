@@ -1,0 +1,56 @@
+<!Doctype html>
+
+<!-- Este programa genera el formulario necesario para insertar un nuevo horario -->
+
+<html>
+    <head>
+        <title>FormularioHorario</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+        <link href="css/estiloform.css" rel="stylesheet"/>
+        <link href='https://www.google.com/fonts#UsePlace:use/Collection:Roboto+Condensed' rel='stylesheet' type='text/css'>
+        
+        <style>
+        
+            h1{
+                margin-left: 450px;
+                margin-top: 50px;
+            }
+            table{
+                 margin-left: 400px;
+                 margin-top: 30px;
+                background-color: ivory;
+            }
+        </style>
+        
+    </head>
+    
+    <body background="fondos/medicalicons.jpg">
+        <header>
+            <hgroup>
+                <h1 class="h1">CAPTURA DE HORARIOS!!!!</h1>
+            </hgroup>
+        
+        </header>
+        <div>  
+          <section id="tabla" >
+             <form name="formulario" method="post" action="insertandohorario.php" >
+                <table>
+                    <tr><td>
+                        Día:&nbsp;<input type="text" name="dia" id="dia" placeholder="Coloca el dìa" required></td></tr>
+                        <tr><td>
+            Hora Inicio:&nbsp;<input type="text" name="horainicio" id="horainicio" placeholder="eje: 6:00 am/pm" required></td></tr>
+                        <tr><td>
+            Hora Fin:&nbsp;<input type="text" name="horafin" id="horafin" placeholder="eje: 7:26 am/pm" required></td></tr>
+                        <tr><td>
+                        <input type="submit" id="OK" value="Guardar"></td></tr>
+                </table>         
+             </form>    
+          </section>
+
+          <section id="zonadatos">
+            <!--    futurosdatos  -->
+          </section>
+    
+        </div>
+    </body
+</html>

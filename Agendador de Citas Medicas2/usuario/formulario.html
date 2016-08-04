@@ -1,0 +1,74 @@
+<!Doctype html>
+
+<!--Este programa genera el formulario de captura de datos del paciente -->
+
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+        <link href="estiloform1.css" rel="stylesheet"/>
+        <link href="extra.css" rel="stylesheet"/>
+        <link href='https://www.google.com/fonts#UsePlace:use/Collection:Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <!--    <script src="formulario.js"></script>-->
+    </head>
+    
+    <body>
+        <script>
+            var bgcolorlist=new Array("#F596BE","#C595F2", "#659CE5","#58A9AD")
+            document.body.style.background=bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]
+        </script>
+        <style> 
+            table{ background: ivory;}
+            iframe{ border-radius: 10px;}
+            h2,h1{background: -webkit-linear-gradient(left top,#87CEFA,#0099FF);}
+                
+        </style>
+        <ul class='bg-bubbles'>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <header>
+            <hgroup>
+                <h1 class="h1">CAPTURA DE DATOS</h1>
+            </hgroup>
+        
+        </header>
+        <div>
+        <section id="tabla">
+            <form name="formulario" method="post" action="enviandodatos1.php" >
+                <table>
+                    <tr><td>
+                        Nombre:&nbsp;<input type="text" name="nombre" id="nombre" placeholder="Coloca tu nombre completo" required></td></tr>
+                        <tr><td>
+                    Apellido:&nbsp;<input type="text" name="apellido" id="apellido" placeholder="Coloca tu apellido completo" required></td></tr>
+                        <tr><td>
+                        Telefono:&nbsp;<input pattern="[0-9]{10}" name="telefono" id="telefono" placeholder="celular" required></td></tr>
+                        <tr><td>
+                        Direccion:&nbsp;<input type="text" name="direccion" id="direccion" required></td></tr>
+                        <tr><td>
+                        Correo:&nbsp;<input type="text" name="desc" id="desc"  required></td></tr>
+                        <tr><td>
+                        <input type="submit" value="OK">
+						</td></tr>
+                
+                </table>         
+            </form>    
+        </section>
+        <section id="zonadatos">
+            <hgroup>
+                <h2>VISITANOS!!!!</h2>
+            </hgroup>
+        <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7521.510845203836!2d-99.16599479999999!3d19.5091556!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1433645305287" width="600" height="450" frameborder="30" style="border:0"></iframe>
+        
+        </section>
+        </div>
+    </body>
+</html>
